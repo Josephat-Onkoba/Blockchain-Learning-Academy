@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **EduChain Tokenized Course Platform**
 
-## Getting Started
+## **Overview**
+EduChain Tokenized Course Platform is a decentralized education marketplace where learners can access and purchase courses using a **tokenized economy** powered by **$EDU tokens**. The platform ensures that only accredited individuals and institutions can upload courses, while learners use **MyTokens** (exchangeable with $EDU) to access educational content.
 
-First, run the development server:
+## **Key Features**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### **1. Decentralized Course Marketplace**
+- Accredited educators and institutions can upload courses.
+- Users must be part of the **EduChain ecosystem** to participate.
+- Course access is managed via smart contracts.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **2. Tokenized Economy**
+- **1 $EDU = 10,000 MyTokens**.
+- MyTokens can only be bought with **$EDU tokens**.
+- MyTokens are required for course access, forum participation, and engagement.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **3. Course & Forum Access**
+- Courses consist of **chapters, assignments, and discussion forums**.
+- Learners spend MyTokens per **chapter read**.
+- Assignments are free for those who have unlocked the chapter.
+- **Two types of forums**:
+  - **Course-specific forums** for discussions related to a particular course.
+  - **Platform-wide forums** for general educational discussions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **4. Earn MyTokens via Forum Engagement**
+- Posting in forums **costs a small MyToken fee**.
+- Other users engaging (likes, comments, reposts) **reward the original poster** with MyTokens.
+- Earned MyTokens can be used for other courses or converted back into **$EDU tokens**.
 
-## Learn More
+### **5. Blockchain & Smart Contract Integration**
+- **Token Exchange Smart Contract**: Converts $EDU tokens into MyTokens.
+- **Course Access Control Smart Contract**: Ensures only users with sufficient MyTokens can access courses.
+- **Forum Engagement Smart Contract**: Automates MyToken rewards for contributions.
+- **EduChain Identity Verification**: Users must authenticate via Open Campus ID.
 
-To learn more about Next.js, take a look at the following resources:
+## **Technology Stack**
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Blockchain:** Solidity, EduChain, OpenZeppelin libraries
+- **Smart Contract Integration:** ethers.js, Web3.js
+- **Development Tools:** Hardhat, Remix, VS Code
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## **Roadmap**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **1. MVP Development**
+- Develop smart contracts for token exchange, course access, and forum economy.
+- UI integration with blockchain functions.
+- Implement authentication via EduChain’s Open Campus ID.
 
-## Deploy on Vercel
+### **2. Testing & Deployment**
+- Conduct smart contract audits and deploy on testnet.
+- Test blockchain interaction with the frontend.
+- Onboard initial users and perform security reviews.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **3. Launch & Growth**
+- Deploy on **EduChain mainnet**.
+- Partner with educational institutions.
+- Introduce governance for decentralized course approvals.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## **Getting Started**
+### **Prerequisites**
+- Node.js & npm
+- VS Code with Solidity extension
+- EduChain testnet account
+- Metamask (or compatible Web3 wallet)
+
+### **Installation & Setup**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/educhain-course-platform.git
+   cd educhain-course-platform
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the frontend:
+   ```bash
+   npm run dev
+   ```
+4. Deploy smart contracts (using Hardhat):
+   ```bash
+   npx hardhat run scripts/deploy.js --network testnet
+   ```
+
+## **Contributing**
+Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request.
+
+## **License**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## **Contact**
+For any inquiries or collaborations, reach out via **JosephatOnkoba_**.
